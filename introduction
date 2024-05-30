@@ -1,0 +1,121 @@
+# Machine Learning (ML) Introduction
+## What is ML?
+This is the process of extracting patterns from data using spefic algorithms. The output of this process is a model.
+Features are the information known from the data and the target is the patern we are interested in finding.
+The pattern learnt are never perfect. Machine learning is the process of extracting patterns from data.
+The data has features (characteristics of objects) and targets. ML learns from the features to predict the target.
+Machine learning is the subfield of computer science that gives "computers the ability to learn without being explicitly programmed.” 
+[An example: predicting the price of goods]
+## ML VS Rule-based?
+The rule-based method is the old or traditional way of extracting patterns from data.
+Rule-based method is good when there aren't frequent changes. When there are frequent changes, then we deploy ML.
+We can use the rule-based to generate or extract features from the data to be used in training the ML models.
+In SWE data and code go into the SW to produce outcomes. In ML, data and outcomes(target) is what goes into the algorithm to produce a model
+Rule-based are highly dependent on the dataset and not generalised enough for out of sample cases
+ml añgorithms are inspired from the human learning to iteratively learn from data
+AI>ML>DL
+Branches of ML:
+Deep learning: algorithms inspired by the human brain and how humans learn
+NLP: encompasses how a machine understands written or spoken human language.
+Computer vision: deals with how computers see and understand digital images.
+Reinforcement learning: includes teaching a machine to make decisions by rewarding desired actions and punishing undesired actions.
+## Supervised ML
+We act like teachers supervising the prcocess of extracting patters by the algorithm from the data-- we teach the algorithm.
+E.g predicting the price of a car(regression), spam detection (classification)
+goal of supervised ML is: g(X) ~~ y
+Regression: predicting a continous variable
+Multi-class classification: predicting a categorical(2) variable
+Binary classification: predicting a categorical(>2) variable
+Ranking (e.g. recommender systems)
+## Supervised ML
+We do not supervise the model, but we allow it to work independently to discover patterns and structures in the data that may not be visible to the human eye. Examples:
+- Dimensionality reduction
+- Density estimation
+- Market basket analysis
+- Clustering (discovering structure, summarizing, anomaly detection)
+
+## Cross-Industry Standard Process for Data Mining (CRISP-DM)
+Goes from problem understanding to deployment
+Helps organise the entire/end-to-end pipleline 
+Created by IBM in the 90's: Old but useful
+step 1: Business understanding 
+is ML really the solution or a better alternative?
+first we need to understand the problem
+Then we need to understand the impact, is it even worth solving, lol
+We need to define a goal, create KPIs also to measure success
+step 2: Data understanding
+What data is available?
+Remember ML needs data
+Identify what is available, what is missing, and how we can get the data that is needed
+step 3: Data preparation
+extract features
+clean the data
+remove noise
+perform transformations 
+produce final/clean/tabular format
+step 4: Modelling
+Now we are ready to train the model
+Try different models and then select one
+we might need to go back and extract/discard/fix features/data
+step 5: Evaluation
+measuring how the model is performing in light of the goal set at the beginning
+At this point you might realise that the goal are unattainable and adjust or even decide to quit the project entirely
+Step 6: deployment
+this often goes hand in hand with deployment. 
+Testing the model on real users (online evaluation- a small fraction of the users)
+how maintainable is it? (scalability and co)
+there is need for monitoring 
+checking that it is in line with all the best SWE practices
+
+We can always go back to previous steps based on the knowledge accumulated so far.
+Overall, we don't stop at deployment. We cotinue to check if there is need for improvement and need to revisit various steps in the process.
+- start simple
+- learn from feedback
+- improve 
+# Model Selection Process
+Models can get lucky. To guard against this, use validation. i,e train, validatae, test.
+
+## Coursera:
+Data engineers play the following role in ML
+- Define the data needs
+- Identify data sources
+- Collect data
+- prepare the data for ML (data exploration, cleaning, transformations(FS happens here), integration, formating)
+- designing approparite storage and management solutions (storage, organisation, security, retrieval, backup & recovery)
+For data transformation: 
+Feature selection --> Feature scaling --> Feature engineering --> Dimensionality reduction --> feature encoding (categorical var) --> Data imputation
+# ML model lifecycle
+1. Problem definition
+2. Data collection
+3. Data preparation
+point 2 and 3 --> ETL
+4. Model development and evaluation
+5. Model deployment
+## Modelling
+Model seleciton process
+Here we try different models with the goal of choosing the best; it depends on the problem.
+Classification types:
+Lazy learners e.g., KNN 
+Eager learner e.g., Logistic regression 
+Evaluating models
+classification
+Precision: involves the cost of failure, so the more false positives you have, the more cost you incur. An example where precision may be more important than accuracy is a movie recommendation engine. 
+Recall: is the fraction of true positives among all the examples that were actually positive. When you have a situation where opportunity cost is more important recall may be a more important metric. An example of this is in the medical field. 
+F1-score: the harmonic or balanced mean of precision and recall 
+regression
+MSE: the lower the better
+RMSE:same unit as target variable, easier to interpret
+R-Squared(coefficient of determination/measures the goodness of fit of the model): the amount of variance in the dependent variable that can be explained by the independent variable. 
+Clustering is the process of grouping unlabelled examples based on their similarities or distance. Used for customer segmentation, image segmentation, anomaly detection, document clustering, and recommendation systems.
+Example algorithms: 
+partitioning clustering --> K-means, k-mediods
+Hierarchical clustering --> Agglomerative clustering
+Density-based clustering --> DBSCAN
+
+
+Artificial Intelligence (AI) is defined as Augmented Intelligence that enables experts to scale their capabilities while machines handle time-consuming tasks.
+Generative Artificial Intelligence (GenAI) is an AI technique capable of creating
+new and unique data, ranging from images and music to text and entire virtual worlds. Gen AI uses deep learning and llms
+
+
+
