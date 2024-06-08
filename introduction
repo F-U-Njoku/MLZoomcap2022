@@ -118,4 +118,23 @@ Generative Artificial Intelligence (GenAI) is an AI technique capable of creatin
 new and unique data, ranging from images and music to text and entire virtual worlds. Gen AI uses deep learning and llms
 
 
+Spark for Data Engineers
+
+Spark is a distributed computing system that processes large-scale datasets. It overcomes the drawbacks ofthe Hadoop MapReduce framework, which was slow and ineffective for specific data processing jobs. It supports:
+- Batch processing
+- Stream processing
+- Machine learning 
+- Graph processing
+It uses distributed computing model
+
+- Spark has in-memory processing capability
+- It can build scalable and efficient data processing systems
+
+DEs use spark for:
+- Data intake
+- Data transformation
+- Data storage
+- Data processing
+- Performance tuning of spark 
+- Performance monitoring of spark 
 
