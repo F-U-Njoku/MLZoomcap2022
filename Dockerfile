@@ -7,6 +7,6 @@ COPY ["homework/", "./"]
 
 RUN pipenv install --system --deploy
 
-EXPOSE 9600
+EXPOSE 8080
 
-ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9600", "predict:app"]
+ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:8080", "predict:app"]
